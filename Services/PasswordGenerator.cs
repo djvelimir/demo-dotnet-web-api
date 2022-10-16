@@ -16,16 +16,15 @@ public class PasswordGenerator : IPasswordGenerator
             SPECIAL_CHARACTERS;
     private static readonly Random random = new Random();
 
-    /**
-     * Generate random password
-     * Generated password length is 16
-     * Generated password contains at least one uppercase character
-     * Generated password contains at least one lowercase character
-     * Generated password contains at least one digit character
-     * Generated password contains at least one special character
-     *
-     * @return generated password
-     */
+     /// <summary>
+     /// Generate random password
+     /// Generated password length is 16
+     /// Generated password contains at least one uppercase character
+     /// Generated password contains at least one lowercase character
+     /// Generated password contains at least one digit character
+     /// Generated password contains at least one special character
+     /// </summary>
+     /// <returns>Generated password</returns>
     public String Generate()
     {
         var stringBuilder = new StringBuilder();
