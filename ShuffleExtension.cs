@@ -1,4 +1,4 @@
-namespace demo_dotnet_web_api;
+namespace DemoDotnetWebApi;
 
 public static class ShuffleExtension
 {

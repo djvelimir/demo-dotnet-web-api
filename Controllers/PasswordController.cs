@@ -1,7 +1,7 @@
-using demo_dotnet_web_api.Interfaces;
+using DemoDotnetWebApi.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace demo_dotnet_web_api.Controllers;
+namespace DemoDotnetWebApi.Controllers;
 
 [ApiController]
 [Route("api/v1/[controller]")]

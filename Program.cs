@@ -1,10 +1,12 @@
-using demo_dotnet_web_api.Interfaces;
-using demo_dotnet_web_api.Services;
+using DemoDotnetWebApi.Interfaces;
+using DemoDotnetWebApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddSingleton<IPasswordGenerator, PasswordGenerator>();
+builder.Services.AddTransient<IPasswordGenerator, PasswordGenerator>();
+builder.Services.AddTransient<IRandomCharacterGenerator, RandomCharacterGenerator>();
+builder.Services.AddTransient<IStringShuffler, StringShuffler>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

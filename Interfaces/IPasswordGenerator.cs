@@ -1,4 +1,4 @@
-namespace demo_dotnet_web_api.Interfaces;
+namespace DemoDotnetWebApi.Interfaces;
 
 public interface IPasswordGenerator
 {
